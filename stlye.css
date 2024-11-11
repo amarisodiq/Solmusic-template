@@ -1,0 +1,849 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+nav {
+    padding: 0px 55px;
+    background: #08192d;
+}
+
+.nav-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-menu li {
+    list-style-type: none;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 0px 1rem;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right .help-btn {
+    color: #979aa5;
+}
+.nav-right, span {
+    color: #fff;
+    padding-left: 9px;
+}
+
+.nav-right .nav-option a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/*.........................
+ media querie for nav-bar
+ ..........................*/
+@media screen and (max-width:1000px) {
+    .main-menu li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        padding: 0px 0.5rem;
+    }
+
+    .nav-right .nav-option a {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar{
+        display: none;
+    }
+    .nav-right {
+        display: none;
+    }
+}
+
+@media  screen and (max-width:660px) {
+    nav {
+        padding: 0px 30px;
+    }
+}
+
+/*.........................
+ the end of media querie for nav-bar
+ ..........................*/
+ 
+.parent-menu-icon {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 16px;
+     background-color: #4c4c4c;
+    padding: 5px;
+}
+
+.sec-menu-icon {
+    margin: 5px;
+    padding: 7px 10px;
+}
+
+.menu-icon {
+    padding: 7px 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.slicknav_menutxt {
+    font-weight: 700;
+}
+
+i {
+    width: 1.125em;
+    height: .875em;
+    margin: .188em 0 0 .438em;
+}
+
+
+
+/*.........................
+ new section 
+ ..........................*/
+
+.hero-page {
+    background-image: url(./image/how-to-bg.jpg);
+    padding-bottom: 70px;
+}
+
+/* .hero-parent{
+    width: 80%;
+    margin: auto;
+} */
+
+.hero-container {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 50px;
+    padding: 0 15px;
+}
+
+.hero-container h1 {
+    color: white;
+    text-align: left;
+    font-size: 70px;
+    margin-bottom: 25px;
+    line-height: 0.9;
+    position: relative;
+    top: 50px;
+}
+
+.hero-container h1 span{
+    color: #fc0254;
+}
+
+.hero-container p {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.hero-txt {
+    /* padding-top: 90px; */
+    max-width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 23px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 195px;
+    background-color: #fc0254;
+    color: #fff;
+    line-height: normal; 
+    text-align: center;
+}
+.sec-btn {
+    background-color: #383b70;
+    margin-left: 8px;
+}
+.hero-img-con {
+    width: 100%;
+}
+
+
+/*.........................
+ media querie for hero-page
+ ..........................*/
+@media screen and (max-width:950px) {
+    .hero-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-txt> h1 {
+        margin-bottom: 1rem;
+    }
+    .hero-txt> p {
+        /* text-align: center; */
+        line-height: 1.5;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+    .hero-img-con> img {
+        display: none;
+    }
+@media screen and (max-width:820px) {
+    .hero-txt> h1 {
+        line-height: 0.1;
+        margin-bottom: 1rem;
+    }
+    .hero-txt> p {
+        margin-top: 3rem;
+        /* margin-bottom: 3rem; */
+    }
+}
+
+@media  screen and (max-width:660px) {
+    .hero-txt> h1 {
+        font-size: 3rem;
+    }
+    
+    .btn-container {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .sec-btn {
+        background-color: #383b70;
+        margin: 0.8rem 0px 0px 0px;
+    }
+
+    .hero-container {
+        display: flex;
+        margin: 0px 30px;
+        padding: 0px;
+    }
+}
+}
+/*.........................
+ the end of media querie for hero-page
+ ..........................*/
+
+
+
+ /*.........................
+ new section
+ ..........................*/
+.access {
+    margin: 105px 0;
+}
+.cont-body {
+    margin: 0 50px;
+    padding: 0 15px;
+}
+
+.cont-body {
+    display: flex;
+    justify-content: space-between;
+}
+.cont-2 {
+    width: 100%;
+    margin-bottom: 35px;
+    padding: 10px;
+}
+.cont-1 {
+    width: 100%;
+}
+ h1 {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 600;
+}
+.cont-2> p {
+    margin-bottom: 35px;
+    line-height: 1.8;
+    font-weight: 500;
+    font-size: 15px;
+}
+/*.........................
+ media queries for access
+ ..........................*/
+ @media screen and (max-width:950px) {
+    .cont-body {
+        flex-direction: column;
+    }
+    .access {
+        margin: 70px 0px;
+    }
+    .cont-1 {
+        margin-bottom: 20px;
+    }
+    
+@media  screen and (max-width:660px) {
+    
+    .access {
+        margin: 50px 0px;
+    }
+
+    .cont-body {
+        margin: 0 30px;
+        padding: 0px;
+    }
+
+    .cont-1 {
+        margin-bottom: 0px;
+    }
+
+    .cont-1> h1 {
+        font-size: 3rem;
+    }
+
+    .cont-2> p {
+        margin-bottom: 15px;
+    }
+
+    .cont-2 {
+        margin-bottom: 15px;
+    }
+}
+ }
+ /*.........................
+ the end of media queries for access
+  ..........................*/
+
+
+
+ /*.........................
+ new section
+  ..........................*/
+.main-content {
+    background-image: url(./image/how-to-bg.jpg);
+}
+.work-content {
+    margin: 0 50px;
+    padding: 3rem 15px;
+    color: #fff;
+}
+.work-content> h1 {
+    padding: 3rem 0;
+    color: #fff;
+}
+.work-txt {
+    display: flex;
+}
+
+.hi-icon {
+    position: relative;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: #fc0254;
+    margin-bottom: 25px;
+}
+.hi-icon> img {
+    position: absolute;
+    right: -8px;
+    bottom: 0;
+}
+.cards {
+    padding: 15px;
+}
+.cards> h4 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+.cards> p {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+/*.........................
+ media queries for main-content
+ ..........................*/
+ @media screen and (max-width:950px) {
+    .work-txt {
+        flex-wrap: wrap;
+    }
+
+    .cards> h4 {
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+
+    .hi-icon {
+        margin-bottom: 5px;
+    }
+    
+@media  screen and (max-width:660px) {
+    .work-content {
+        margin: 0 30px;
+        padding: 0px;
+    }
+
+    .work-content> h1 {
+        font-size: 3rem;
+        padding: 2rem 0px 1rem;
+    }
+
+}
+ }
+/*.........................
+ media queries for main-content
+ ..........................*/
+ 
+ 
+ 
+ /*.........................
+  new section
+  ..........................*/
+.parent-artists {
+    margin: 105px 0;
+}
+.section-title {
+    width: 100%;
+}
+.section-title> h2{
+    font-size: 60px;
+    line-height: 1;
+
+}
+.section-txt {
+    width: 100%;
+    padding: 10px;
+    color: #6a7080;
+}
+.child-artists {
+    margin: 0 50px;
+    padding: 0 15px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-image {
+    margin: 3rem 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-image, h5 {
+    font-size: 18px;
+    text-align: center;
+}
+.img-s {
+    border-radius: 40px;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+
+/*.........................
+ media queries for parent-artists
+ ..........................*/
+ @media screen and (max-width:1320px) {
+    .section-image {
+        flex-wrap: wrap;
+    }
+
+    .img-s-parent {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .img-s {
+        width: 95%;
+    }
+  }
+ @media screen and (max-width:950px) {
+    .child-artists {
+        flex-wrap: wrap;
+    }
+
+    .parent-artists {
+        margin: 50px 0px;
+    }
+    
+    .section-image {
+        flex-wrap: wrap;
+    }
+
+    /* .img-s-parent {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .img-s {
+        width: 100%;
+    } */
+
+@media  screen and (max-width:660px) {
+    .child-artists {
+        margin: 0 30px;
+        padding: 0px;
+    }
+
+    .section-title> h2 {
+        font-size: 3rem;
+        /* padding: 2rem 0px 1rem; */
+    }
+
+    .section-image {
+        margin: 1rem 30px;
+    }
+
+    .img-s {
+        width: 100%;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .img-s-parent {
+        width: 100%;
+
+    }
+}
+ }
+ /*.........................
+ the end of media queries for parent-artists
+  ..........................*/
+  
+  
+  
+  /*.........................
+new section
+   ..........................*/
+.subscription {
+    background: #0a183d;
+    padding: 4rem 0px;
+}
+.sub-parent {
+    margin: 0px 50px;
+    padding: 0px 15px;
+}
+.sub-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-txt {
+    width: 50%;
+    /* padding-right: 15px; */
+}
+.sub-txt> h2 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+.sub-txt> h3 {
+    color: #fc0254;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.sub-txt> p {
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.sub-list {
+    background: #1c294a;
+    width: 48%;
+    border-radius: 42px;
+    margin-left: 1.4rem;
+    color: #fff;
+}
+.sub-list> ul{
+    list-style: none;
+    padding: 70px 15px 50px 155px;
+}
+.sub-list> li{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/*.........................
+ media queries for subscription
+ ..........................*/
+ @media screen and (max-width:1320px) {
+    .sub-list {
+        width: 50%;
+        margin-left: 0px;
+    }
+  }
+ @media screen and (max-width:950px) {
+    .sub-child {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    .sub-txt {
+        width: 100%;
+    }
+
+    .sub-txt> h2 {
+        margin-bottom: 0px;
+        font-size: 3rem;
+    }
+
+    .sub-txt> h3 {
+        margin-bottom: 0px;
+    } 
+
+    .sub-txt> p {
+        margin-bottom: 20px;
+    }
+
+    .sub-list {
+        width: 100%;
+        margin-left: 0px;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    .sub-list> ul {
+        list-style: none;
+        padding: 50px 15px 50px 35px;
+    }
+ }
+
+@media  screen and (max-width:660px) {
+    .sub-parent {
+        margin: 0 30px;
+        padding: 0px;
+    }
+}
+ /*.........................
+the end of media queries for subscription
+  ..........................*/
+
+
+
+ /*.........................
+new section
+  ..........................*/
+.premium {
+    margin: 105px 0;
+}
+.premium-title {
+    width: 100%;
+    padding: 0px 15px;
+}
+.premium-title> h2{
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 1;
+    color: #0a183d;
+    font-weight: 600;
+
+}
+.premium-txt {
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 15px;
+    color: #6a7080;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.premium-child {
+    margin: 0 50px;
+    padding: 0 15px ;
+    display: flex;
+    justify-content: space-between;
+}
+.premium-image {
+    display: flex;
+    justify-content: space-evenly;
+}
+.premium-image h4 {
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: #0a183d;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+.premium-image p {
+    font-size: 15px;
+    color: #6a7080;
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: center;
+}
+.img-premium {
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+
+/*.........................
+media queries for premium
+ ..........................*/
+ @media screen and (max-width:950px) {
+    .premium-child {
+        flex-wrap: wrap;
+    }
+
+    .premium {
+        margin: 50px 0px;
+    }
+    
+    .premium-title> h2 {
+        margin-bottom: 1rem;
+    }
+
+    .premium-image {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* .img-premium-p {
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+    .img-s-parent {
+        margin-bottom: 2rem;
+    }
+
+    .img-premium {
+        width: 80%;
+    } */
+    @media  screen and (max-width:660px) {
+    .img-premium-p {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .img-premium {
+        width: 80%;
+    } 
+
+    .premium-image {
+      margin: 0px 30px;
+      padding: 0px;
+    }
+    .premium-title> h2 {
+        font-size: 3rem;
+    }
+
+    .premium-child {
+        margin: 0 30px;
+        padding: 0px;
+    }
+}
+ }
+ /*.........................
+the end of media queries for premium
+  ..........................*/
+
+
+ /*.........................
+new section
+  ..........................*/
+.footer {
+    background: #0a183d;
+    padding: 4rem 0px;
+}
+.footer-parent {
+    margin: 0px 50px;
+}
+.footer-children {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #505565;
+    padding: 10px 0 25px;
+}
+.footer-child {
+    width: 100%;
+}
+.footer-child-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 15px;
+}
+.social-links> a {
+    display: inline-block;
+    color: #6a7080;
+    font-size: 18px;
+    margin-right: 35px;
+}
+.services {
+    padding: 0px 15px;  
+}
+.services> h2 {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px; 
+}
+.services> ul {
+    list-style: none;
+}
+.services li {
+    margin-bottom: 0px;
+}
+.services a {
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #6a7080;
+}
+
+/*.........................
+media queries for footer
+ ..........................*/
+@media screen and (max-width:660px) {
+    .footer-children {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-parent {
+        margin: 0px 30px;
+    }
+
+    .footer-child-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*.........................
+the end of media queries for footer
+ ..........................*/
